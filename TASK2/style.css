@@ -4,6 +4,86 @@ body{
   font-family: sans-serif;
   background: #f0a7e6;
 }
+a {
+  text-decoration: none;
+} 
+
+li {
+  list-style: none;
+}
+
+.logo img {
+  width: 3vw;
+  height: 4vh;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(221, 80, 209);
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(240, 135, 198);
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li+li {
+  margin-top: 5px;
+}
+
+.dropdown li {
+  padding: 0.2em 0.2em;
+  width: 9em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
 .box{
   width: 500px;
   padding: 80px;
